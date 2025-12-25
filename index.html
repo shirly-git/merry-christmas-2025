@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Merry Christmas to the Man I Love 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Dynalight&family=Fleur+De+Leah&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="scene">
+  <div class="heart-box">
+    <div class="lid-wrapper" id="lid">
+      <img src="images/cover.png" class="lid-img">
+    </div>
+
+    <div class="base-wrapper">
+      <img src="images/box.png" class="base-img">
+      <div class="cookies">
+        <img src="images/cookie1.png" class="cookie" onclick="openModal('loveLetter')">
+        <img src="images/cookie2.png" class="cookie" onclick="openModal('memories')">
+        <img src="images/cookie4.png" class="cookie" onclick="openThingsILoveModal('thingsILove')">
+        <img src="images/cookie3.png" class="cookie" onclick="openModal('timer')">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Background Music -->
+<audio id="bg-music" loop>
+  <source src="music/music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Snow -->
+<div class="snow"></div>
+
+
+<!-- CONTROLS -->
+<div class="controls">
+  <div class="message" id="message">🎄 Please choose a cookie 🍪</div>
+
+  <button id="toggle-btn">OPEN</button>
+</div>
+
+<!-- LOVE LETTER -->
+<div class="modal" id="loveLetter">
+  <div class="modal-content">
+    <div class="letter-paper">
+      <div class="letter-date">December 25, 2025</div>
+
+      <p class="greeting">My Dearest Tony,</p>
+
+      <p>
+        Merry Christmas, babe.
+      </p>
+
+      <p>
+        Looking back at this year, my heart feels full knowing how far we’ve come
+        together despite every obstacle. You are the most precious gift this year
+        has given me.
+      </p>
+
+      <p>
+        Even though we haven’t met yet, your love overflows across miles and miles
+        between us. Thank you for caring for me, loving me, and for having so, so
+        much patience with me.
+      </p>
+
+      <p>
+        You are the best man in my life, and loving you is something I do with my
+        whole heart.
+      </p>
+
+      <p>
+        I hope that next Christmas, we’ll be celebrating together—side by side,
+        with no distance between us.
+        <br>I love you, always.
+      </p>
+
+      <p class="signature">
+        Truly Yours,<br>
+        Shirly
+      </p>
+
+      <button class="return-btn" onclick="closeModal()">🎄 Back to our box 🍪</button>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- MEMORIES -->
+<div class="modal" id="memories">
+  <div class="modal-content memories-box">
+
+    <h2 class="modal-title">Our Memories</h2>
+    <div class="carousel">
+  <img 
+    id="carouselImage"
+    class="carousel-img"
+    src="images/img4.jpg"
+    alt="Our memory"
+  >
+  <p id="carouselCaption" class="carousel-caption">😘</p>
+</div>
+
+
+    <!-- CONTROLS -->
+    <div class="carousel-controls" aria-label="Memory navigation">
+
+      <button onclick="prevSlide()">‹</button>
+      <button onclick="nextSlide()">›</button>
+    </div>
+
+    <button class="return-btn" onclick="closeModal()">🎄 Back to our box 🍪</button>
+
+  </div>
+</div>
+
+
+
+<!-- THINGS I LOVE MODAL - TYPEWRITER STYLE -->
+<div class="modal" id="thingsILove">
+  <div class="love-notes-box">
+    <h1 id="loveTitle"></h1>
+    <div id="typewriterList" class="typewriter-text"></div>
+    <button class="return-btn" onclick="closeModal()">🎄 Back to our box 🍪</button>
+  </div>
+</div>
+
+<!-- TIMER MODAL -->
+<div class="modal" id="timer">
+  <div class="modal-content">
+    <h1 class="timer-title">We've Been Together For</h1>
+
+    <div id="timeTogether-container">
+      <div id="heart">
+        <div id="timeTogether"></div>
+      </div>
+    </div>
+
+    <p id="sweetMessage" class="sweet-message">
+      From the first moment to forever, my heart belongs to you...
+    </p>
+
+    <button class="return-btn" onclick="closeModal()">🎄 Back to our box 🍪</button>
+  </div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
